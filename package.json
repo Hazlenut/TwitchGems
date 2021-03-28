@@ -1,0 +1,19 @@
+{
+  "name": "hoohacks21_1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.5",
+    "dotenv": "^8.2.0",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6"
+  }
+}
