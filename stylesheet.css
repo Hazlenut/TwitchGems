@@ -1,0 +1,17 @@
+#twitch-embed {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+.background {
+    background-image: url("bgimage.jpg");
+}
+.refreshbutton {
+    position: absolute;
+    left: 25%;
+    top: 60%;
+    width: 100px;
+    height: 20px;
+}

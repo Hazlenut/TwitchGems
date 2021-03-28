@@ -1,14 +1,11 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
-
-
 var priority = [];
 var names = [];
 
 const getStreamerInfo = async() => {
     try {
         var pageNumber = 200 + Math.floor((Math.random() * 200));
-        console.log(pageNumber + " pg");
         //const { data } = await axios.get('https://twitchtracker.com/channels/live');
         const { data } = await axios.get('https://twitchtracker.com/channels/live?page=' + pageNumber);
         const $ = cheerio.load(data);
@@ -69,8 +66,10 @@ const getStreamerInfo = async() => {
             console.log(streamerInfo.activeDays);
             console.log("POINTS " + points);
         }
+        console.log(names[getHigh()]);
         return names[getHigh()];
     } catch(error) {
+        console.log(names[getHigh()]);
         return names[getHigh()];
     }
 };

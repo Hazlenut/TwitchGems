@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Twitch Gems</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <script data-main="scripts/main" src="../node_modules/require/require.js"></script>
+  </head>
+  <body>
+
+    <div id="twitch-embed">
+      <script src="https://embed.twitch.tv/embed/v1.js"></script>
+      <script data-main="scrape2"  src="node_modules/require/require.js"></script>
+      <script type="text/javascript" src="scrape2.js"></script>
+      --!>
+    <script type="text/javascript">
+      var name = perform();
+      new Twitch.Embed("twitch-embed", {
+        width: 854,
+        height: 480,
+        channel: name,
+        parent: ["s3.amazonaws.com"]
+      });
+
+    </script>
+</div>
+    </body>
+    </html>

@@ -5,21 +5,27 @@
   <title>Twitch Gems</title>
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   </head>
-  <body>
-    
-    <div id="twitch-embed">
-      <script type="text/javascript" src="scrape2.js"></script>
+  <body style="background-image: url('bgimage.jpg')">
       <script src="https://embed.twitch.tv/embed/v1.js"></script>
-    <script type="text/javascript">
-      var name = perform()
+      <div id="twitch-embed">  
+          <script type="text/javascript">
       new Twitch.Embed("twitch-embed", {
-        width: 854,
-        height: 480,
-        channel: name,
+        width: 1100,
+        height: 600,
+        channel: "ESL_CSGO",
         parent: ["s3.amazonaws.com"]
       });
 
     </script>
 </div>
-    </body>
+<button style="font-weight: bold; color: white; position: absolute; top:10%; left:75%; height: 50px; width: 250px; background-color: rebeccapurple ; ">
+  REFRESH
+</button>
+<div style="position: absolute; width: 500px; height: 600px; left: 70%; top: 25%; background-color: rebeccapurple;">
+<span style="font-weight: bold; font-size: 48px; color: white; text-align:center">
+  ESL_CSGO
+</span>
+</div>
+</body>
+</body>
     </html>
